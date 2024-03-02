@@ -120,15 +120,38 @@ a {
   width: 100%;
   display: flex;
 }
+#sUpports .sUpportswarpper .connects {
+  position: relative;
+}
+#sUpports .sUpportswarpper .connects::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 58px;
+  background: #ff3e3e;
+  top: 94px;
+  left: -17px;
+  transform: rotate(-54deg);
+}
+#sUpports .sUpportswarpper .connects::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 60px;
+  background: #ff3e3e;
+  top: 97px;
+  right: 1px;
+  transform: rotate(54deg);
+}
 #sUpports .sUpportswarpper .sUpportsContentbox {
   width: 167px;
   height: 250px;
-  position: relative;
 }
 #sUpports .sUpportswarpper .sUpportsContentbox h4 {
   text-align: center;
   width: 100%;
   height: 100px;
+  padding-top: 40px;
 }
 #sUpports .sUpportswarpper .sUpportsContentbox .conBox {
   display: flex;
