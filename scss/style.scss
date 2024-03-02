@@ -260,11 +260,11 @@ a {
   background-color: #fef2f6;
   padding-top: 50px;
   padding-bottom: 46px;
-  h2{
+  h2 {
     text-align: center;
     margin-bottom: 35px;
   }
-  p{
+  p {
     text-align: center;
     margin-bottom: 58px;
   }
@@ -298,20 +298,19 @@ a {
     }
   }
 }
-#Idea{
+#Idea {
   width: 100%;
   padding-top: 66px;
   padding-bottom: 55px;
-  .ideaWarpper{
+  .ideaWarpper {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .ideaText{
-      h2{
-        margin-bottom: 34px;
+    .ideaText {
+      h2 {
       }
-      a{
+      a {
         text-align: center;
         font-size: 16px;
         text-transform: uppercase;
@@ -319,12 +318,14 @@ a {
         background-color: #ff3e3e;
         padding: 17px 64px;
         border-radius: 25px;
+        display: inline-block;
+        margin-top: 34px;
       }
-    .ideaImage{
-        .ideaImgBox{
+      .ideaImage {
+        .ideaImgBox {
           width: 516px;
           height: 447px;
-          img{
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -335,13 +336,14 @@ a {
   }
 }
 
-
-@media (max-width:576px){
-  .container{max-width: 100%;}
+@media (max-width: 576px) {
+  .container {
+    max-width: 100%;
+  }
   #Maintenance {
     width: 100%;
     height: 100%;
-    .MaintenanceWarpper{
+    .MaintenanceWarpper {
       width: 100%;
       height: 100%;
       padding: 30px 5px;
@@ -350,12 +352,12 @@ a {
       row-gap: 50px;
       align-items: center;
       justify-content: center;
-      .Maintenancetext{
+      .Maintenancetext {
         width: 100%;
       }
-      .MaintenanceImage{
+      .MaintenanceImage {
         width: 100%;
-        img{
+        img {
           object-fit: cover;
           width: 100%;
           max-width: 320px;
@@ -365,22 +367,22 @@ a {
   }
 
   #Technologies {
-    .TechnologiesWarpper{
+    .TechnologiesWarpper {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
       row-gap: 30px;
-      .TechnologiesImages{
-        img{
+      .TechnologiesImages {
+        img {
           object-fit: cover;
           width: 100%;
           max-width: 320px;
         }
       }
-      .TechnologiestextContent{
+      .TechnologiestextContent {
         width: 100%;
-        a{
+        a {
           max-width: 220px;
           margin: auto;
           font-size: 12px;
@@ -388,38 +390,42 @@ a {
       }
     }
   }
-  #sUpports{
-    h2{
+  #sUpports {
+    h2 {
       margin-bottom: 50px;
     }
-    .sUpportswarpper{
+    .sUpportswarpper {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .connects{
+      .connects {
         display: flex;
         flex-direction: column-reverse;
-        &::after{display: none;}
-        &::before{display: none;}
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
       }
     }
   }
-  #chose{
+  #chose {
     padding: 30px 0;
-    ul{
+    ul {
       padding: 0 20px;
     }
   }
-
-
 }
-@media(max-width:768px){
-  .container{max-width: 100%;}
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
   #Maintenance {
     width: 100%;
     height: 100%;
-    .MaintenanceWarpper{
+    .MaintenanceWarpper {
       width: 100%;
       height: 100%;
       padding: 30px 5px;
@@ -428,12 +434,12 @@ a {
       row-gap: 50px;
       align-items: center;
       justify-content: center;
-      .Maintenancetext{
+      .Maintenancetext {
         width: 100%;
       }
-      .MaintenanceImage{
+      .MaintenanceImage {
         width: 100%;
-        img{
+        img {
           object-fit: cover;
           width: 100%;
           max-width: 320px;
@@ -443,22 +449,22 @@ a {
   }
 
   #Technologies {
-    .TechnologiesWarpper{
+    .TechnologiesWarpper {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
       row-gap: 30px;
-      .TechnologiesImages{
-        img{
+      .TechnologiesImages {
+        img {
           object-fit: cover;
           width: 100%;
           max-width: 320px;
         }
       }
-      .TechnologiestextContent{
+      .TechnologiestextContent {
         width: 100%;
-        a{
+        a {
           max-width: 220px;
           margin: auto;
           font-size: 12px;
@@ -466,39 +472,53 @@ a {
       }
     }
   }
-  #sUpports{
-    h2{
+  #sUpports {
+    h2 {
       margin-bottom: 50px;
     }
-    .sUpportswarpper{
+    .sUpportswarpper {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      .connects{
+      .connects {
         display: flex;
         flex-direction: column-reverse;
-        &::after{display: none;}
-        &::before{display: none;}
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
       }
     }
   }
-  #chose{
+  #chose {
     padding: 30px 0;
-    ul{
+    ul {
       padding: 0 20px;
     }
   }
-
-
+  #Idea {
+    .ideaWarpper {
+      display: flex;
+      flex-direction: column-reverse;
+      row-gap: 50px;
+      h2{
+        font-size: 26px;
+      }
+    }
+  }
 }
 
-@media(max-width:992px){
-  .container{max-width: 100%;}
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%;
+  }
   #Maintenance {
     width: 100%;
     height: 100%;
-    .MaintenanceWarpper{
+    .MaintenanceWarpper {
       width: 100%;
       height: 100%;
       padding: 30px 5px;
@@ -507,12 +527,12 @@ a {
       row-gap: 50px;
       align-items: center;
       justify-content: center;
-      .Maintenancetext{
+      .Maintenancetext {
         width: 100%;
       }
-      .MaintenanceImage{
+      .MaintenanceImage {
         width: 100%;
-        img{
+        img {
           object-fit: cover;
           width: 100%;
           max-width: 320px;
@@ -522,22 +542,22 @@ a {
   }
 
   #Technologies {
-    .TechnologiesWarpper{
+    .TechnologiesWarpper {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
       justify-content: center;
       row-gap: 70px;
-      .TechnologiesImages{
-        img{
+      .TechnologiesImages {
+        img {
           object-fit: cover;
           width: 100%;
           max-width: 520px;
         }
       }
-      .TechnologiestextContent{
+      .TechnologiestextContent {
         width: 100%;
-        a{
+        a {
           max-width: 320px;
           margin: auto;
           font-size: 12px;
@@ -545,35 +565,38 @@ a {
       }
     }
   }
-  #sUpports{
-    h2{
+  #sUpports {
+    h2 {
       margin-bottom: 60px;
     }
-    .sUpportswarpper{
+    .sUpportswarpper {
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: auto;
       scroll-behavior: smooth;
-      .connects{
-        &::after{display: none;}
-        &::before{display: none;}
+      .connects {
+        &::after {
+          display: none;
+        }
+        &::before {
+          display: none;
+        }
       }
     }
   }
-  #chose{
+  #chose {
     padding: 30px 0;
-    ul{
+    ul {
       padding: 0 20px;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       column-gap: 50px;
-      li{width: 300px;}
+      li {
+        width: 300px;
+      }
     }
   }
-
-
 }
-
