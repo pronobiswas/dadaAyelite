@@ -295,6 +295,39 @@ a {
   color: #fff;
 }
 
+#Idea {
+  width: 100%;
+  padding-top: 66px;
+  padding-bottom: 55px;
+}
+#Idea .ideaWarpper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#Idea .ideaWarpper .ideaText h2 {
+  margin-bottom: 34px;
+}
+#Idea .ideaWarpper .ideaText a {
+  text-align: center;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff3e3e;
+  padding: 17px 64px;
+  border-radius: 25px;
+}
+#Idea .ideaWarpper .ideaText .ideaImage .ideaImgBox {
+  width: 516px;
+  height: 447px;
+}
+#Idea .ideaWarpper .ideaText .ideaImage .ideaImgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 576px) {
   .container {
     max-width: 100%;
