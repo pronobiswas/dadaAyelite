@@ -113,8 +113,12 @@ a {
 
 #sUpports {
   width: 100%;
-  padding: 30px 0;
+  padding: 53px 0;
   background-color: #fef2f6;
+}
+#sUpports h2 {
+  text-align: center;
+  margin-bottom: 101px;
 }
 #sUpports .sUpportswarpper {
   width: 100%;
@@ -217,4 +221,76 @@ a {
   font-size: 60px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#chose {
+  width: 100%;
+  padding: 67px 0;
+}
+#chose h2 {
+  margin-bottom: 21px;
+  text-align: center;
+}
+#chose p {
+  margin-bottom: 53px;
+  text-align: center;
+}
+#chose ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#chose ul li {
+  width: 390px;
+  padding: 10px 0;
+}
+#chose ul li span i {
+  color: #ff3e3e;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+#Serve {
+  width: 100%;
+  background-color: #fef2f6;
+  padding-top: 50px;
+  padding-bottom: 46px;
+}
+#Serve h2 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+#Serve p {
+  text-align: center;
+  margin-bottom: 58px;
+}
+#Serve ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 32px;
+  row-gap: 54px;
+}
+#Serve ul li {
+  width: 262px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+  box-shadow: 0 0 3px 1px rgba(187, 187, 187, 0.2588235294);
+  border-radius: 4px;
+}
+#Serve ul li .Serveicon {
+  width: 83px;
+  height: 100px;
+  background-color: #ff3e3e;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
