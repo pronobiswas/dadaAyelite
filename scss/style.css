@@ -75,6 +75,14 @@ a {
   text-transform: uppercase;
   color: #fff;
   border-radius: 25px;
+  border: 1px solid transparent;
+  transition: 0.2s all linear;
+}
+#Maintenance .MaintenanceWarpper .Maintenancetext a:hover {
+  background-color: #fff;
+  color: #ff3e3e;
+  border: 1px solid #ff3e3e;
+  font-weight: 600;
 }
 #Maintenance .MaintenanceWarpper .MaintenanceImage {
   width: 518px;
@@ -109,6 +117,14 @@ a {
   text-transform: uppercase;
   color: #fff;
   border-radius: 25px;
+  border: 1px solid transparent;
+  transition: 0.2s all linear;
+}
+#Technologies .TechnologiesWarpper .TechnologiestextContent a:hover {
+  background-color: #fff;
+  color: #ff3e3e;
+  border: 1px solid #ff3e3e;
+  font-weight: 700;
 }
 
 #sUpports {
@@ -316,9 +332,17 @@ a {
   border-radius: 25px;
   display: inline-block;
   margin-top: 34px;
+  border: 1px solid transparent;
+  transition: 0.2s all linear;
+}
+#Idea .ideaWarpper .ideaText a:hover {
+  background-color: #fff;
+  color: #ff3e3e;
+  border: 1px solid #ff3e3e;
+  font-weight: 600;
 }
 #Idea .ideaWarpper .ideaText .ideaImage .ideaImgBox {
-  width: 516px;
+  max-width: 516px;
   height: 447px;
 }
 #Idea .ideaWarpper .ideaText .ideaImage .ideaImgBox img {
@@ -352,6 +376,7 @@ a {
     width: 100%;
   }
   #Maintenance .MaintenanceWarpper .MaintenanceImage img {
+    max-width: 320px;
     object-fit: cover;
     width: 100%;
     max-width: 320px;
@@ -492,6 +517,7 @@ a {
   #Maintenance {
     width: 100%;
     height: 100%;
+    padding: 15px;
   }
   #Maintenance .MaintenanceWarpper {
     width: 100%;
@@ -505,14 +531,22 @@ a {
   }
   #Maintenance .MaintenanceWarpper .Maintenancetext {
     width: 100%;
+    text-align: center;
   }
-  #Maintenance .MaintenanceWarpper .MaintenanceImage {
-    width: 100%;
+  #Maintenance .MaintenanceWarpper .Maintenancetext h2 {
+    max-width: 600px;
+    margin: auto;
+  }
+  #Maintenance .MaintenanceWarpper .Maintenancetext p {
+    max-width: 480px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
   }
   #Maintenance .MaintenanceWarpper .MaintenanceImage img {
     object-fit: cover;
     width: 100%;
-    max-width: 320px;
+    max-width: 520px;
   }
   #Technologies .TechnologiesWarpper {
     display: flex;
@@ -537,17 +571,16 @@ a {
   #sUpports h2 {
     margin-bottom: 60px;
   }
-  #sUpports .sUpportswarpper {
+  #sUpports .slides .sUpportswarpper {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: auto;
-    scroll-behavior: smooth;
   }
-  #sUpports .sUpportswarpper .connects::after {
+  #sUpports .slides .sUpportswarpper .connects::after {
     display: none;
   }
-  #sUpports .sUpportswarpper .connects::before {
+  #sUpports .slides .sUpportswarpper .connects::before {
     display: none;
   }
   #chose {
@@ -563,5 +596,20 @@ a {
   }
   #chose ul li {
     width: 300px;
+  }
+  .ideaImgBox {
+    max-width: 420px;
+  }
+  .ideaImgBox img {
+    max-width: 320px;
+    width: 100%;
+  }
+}
+@media (max-width: 1200px) {
+  .MaintenanceWarpper {
+    padding: 50px;
+  }
+  .ideaWarpper {
+    padding: 0 40px;
   }
 }/*# sourceMappingURL=style.css.map */

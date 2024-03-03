@@ -67,6 +67,14 @@ a {
         text-transform: uppercase;
         color: #fff;
         border-radius: 25px;
+        border: 1px solid transparent;
+        transition: 0.2s all linear;
+        &:hover {
+          background-color: #fff;
+          color: #ff3e3e;
+          border: 1px solid #ff3e3e;
+          font-weight: 600;
+        }
       }
     }
 
@@ -105,6 +113,14 @@ a {
         text-transform: uppercase;
         color: #fff;
         border-radius: 25px;
+        border: 1px solid transparent;
+        transition: 0.2s all linear;
+        &:hover {
+          background-color: #fff;
+          color: #ff3e3e;
+          border: 1px solid #ff3e3e;
+          font-weight: 700;
+        }
       }
     }
   }
@@ -308,8 +324,6 @@ a {
     align-items: center;
     justify-content: space-between;
     .ideaText {
-      h2 {
-      }
       a {
         text-align: center;
         font-size: 16px;
@@ -320,10 +334,18 @@ a {
         border-radius: 25px;
         display: inline-block;
         margin-top: 34px;
+        border: 1px solid transparent;
+        transition: 0.2s all linear;
+        &:hover {
+          background-color: #fff;
+          color: #ff3e3e;
+          border: 1px solid #ff3e3e;
+          font-weight: 600;
+        }
       }
       .ideaImage {
         .ideaImgBox {
-          width: 516px;
+          max-width: 516px;
           height: 447px;
           img {
             width: 100%;
@@ -358,6 +380,7 @@ a {
       .MaintenanceImage {
         width: 100%;
         img {
+          max-width: 320px;
           object-fit: cover;
           width: 100%;
           max-width: 320px;
@@ -504,7 +527,7 @@ a {
       display: flex;
       flex-direction: column-reverse;
       row-gap: 50px;
-      h2{
+      h2 {
         font-size: 26px;
       }
     }
@@ -518,6 +541,7 @@ a {
   #Maintenance {
     width: 100%;
     height: 100%;
+    padding: 15px;
     .MaintenanceWarpper {
       width: 100%;
       height: 100%;
@@ -529,13 +553,25 @@ a {
       justify-content: center;
       .Maintenancetext {
         width: 100%;
+        text-align: center;
+        h2 {
+          max-width: 600px;
+          margin: auto;
+        }
+        p {
+          max-width: 480px;
+          margin: auto;
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
       }
       .MaintenanceImage {
-        width: 100%;
+        // width: 100%;
+        // background-color: aqua;
         img {
           object-fit: cover;
           width: 100%;
-          max-width: 320px;
+          max-width: 520px;
         }
       }
     }
@@ -569,18 +605,19 @@ a {
     h2 {
       margin-bottom: 60px;
     }
-    .sUpportswarpper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: auto;
-      scroll-behavior: smooth;
-      .connects {
-        &::after {
-          display: none;
-        }
-        &::before {
-          display: none;
+    .slides {
+      .sUpportswarpper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+        .connects {
+          &::after {
+            display: none;
+          }
+          &::before {
+            display: none;
+          }
         }
       }
     }
@@ -598,5 +635,20 @@ a {
         width: 300px;
       }
     }
+  }
+  .ideaImgBox {
+    max-width: 420px;
+    img {
+      max-width: 320px;
+      width: 100%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .MaintenanceWarpper {
+    padding: 50px;
+  }
+  .ideaWarpper {
+    padding: 0 40px;
   }
 }
